@@ -1,0 +1,321 @@
+:root {
+  --bg: #fffbed;
+  --panel: #ffffff;
+  --accent: #3b82f6;
+  --accent-dark: #1d4ed8;
+  --text: #1e293b;
+  --muted: #64748b;
+  --border: #cbd5e1;
+  --common: #22c55e;
+  --uncommon: #f59e0b;
+  --rare: #ef4444;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.4;
+}
+
+header {
+  background: var(--accent);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab.active, .tab:hover {
+  background: #fff;
+  color: var(--accent);
+}
+
+main { padding: 1rem 1.5rem; }
+
+.view { display: none; }
+.view.active { display: block; }
+
+.tool-intro {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tool-intro h2 { margin: 0 0 0.25rem; }
+
+.tool-intro p { margin: 0; color: var(--muted); }
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover { background: var(--accent-dark); }
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: var(--text);
+}
+
+.btn-secondary:hover { background: #cbd5e1; }
+
+.selection-count {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.ingredient-layout, .potion-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.ingredient-panel, .potion-list-panel, .results-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.rarity-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.rarity-column h3 {
+  margin: 0 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.rarity-column[data-rarity="common"] h3 { background: #dcfce7; color: #166534; }
+.rarity-column[data-rarity="uncommon"] h3 { background: #fef3c7; color: #92400e; }
+.rarity-column[data-rarity="rare"] h3 { background: #fee2e2; color: #991b1b; }
+
+.ingredient-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.ingredient-card {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.4rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  background: #fff;
+  transition: background 0.1s, border-color 0.1s;
+}
+
+.ingredient-card:hover { background: #f1f5f9; }
+
+.ingredient-card.selected {
+  border-color: var(--accent);
+  background: #eff6ff;
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.ingredient-card .name {
+  font-weight: 600;
+  display: block;
+}
+
+.ingredient-card .values {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.ingredient-card .rarity-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+  margin-top: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.rarity-tag.common { background: #dcfce7; color: #166534; }
+.rarity-tag.uncommon { background: #fef3c7; color: #92400e; }
+.rarity-tag.rare { background: #fee2e2; color: #991b1b; }
+
+.results-panel h2 { margin-top: 0; }
+
+.hint { color: var(--muted); }
+
+.type-section {
+  margin-bottom: 1rem;
+}
+
+.type-section h3 {
+  margin: 0 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: #e2e8f0;
+  text-transform: capitalize;
+}
+
+.type-section.combat h3 { background: #fee2e2; color: #991b1b; }
+.type-section.utility h3 { background: #dbeafe; color: #1e40af; }
+.type-section.whimsy h3 { background: #f3e8ff; color: #6b21a8; }
+
+.potion-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+}
+
+.potion-card h4 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.potion-card .meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.potion-card .description {
+  font-size: 0.85rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.combination {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.combination:last-child { border-bottom: none; }
+
+.ingredient-chip {
+  background: #f1f5f9;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.ingredient-chip .rare { color: var(--rare); }
+.ingredient-chip .uncommon { color: var(--uncommon); }
+
+.potion-group {
+  margin-bottom: 0.5rem;
+}
+
+.potion-group h4 {
+  margin: 0;
+  padding: 0.5rem;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.potion-group h4:hover { background: #f1f5f9; }
+
+.potion-group h4 .number {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.potion-group .recipes {
+  display: none;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  background: #fff;
+}
+
+.potion-group.active h4 {
+  background: #eff6ff;
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.potion-group.open .recipes { display: block; }
+
+.potion-group.open h4 { border-radius: 4px 4px 0 0; }
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .ingredient-layout, .potion-layout {
+    grid-template-columns: 1fr;
+  }
+  .rarity-columns {
+    grid-template-columns: 1fr;
+  }
+}

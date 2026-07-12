@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obojima Potion Almanac</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Obojima Potion Almanac</h1>
+    <nav>
+      <button id="tab-ingredients" class="tab active" data-tab="ingredients">Find Potion from Ingredients</button>
+      <button id="tab-potions" class="tab" data-tab="potions">Find Recipes for a Potion</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="view-ingredients" class="view active">
+      <div class="tool-intro">
+        <h2>Select Three or More Ingredients</h2>
+        <p>Choose ingredients from the rarity columns, then click <strong>Find Recipes</strong> to see which potions you can brew.</p>
+      </div>
+
+      <div class="ingredient-layout">
+        <div class="ingredient-panel">
+          <div class="controls">
+            <button id="find-recipes" class="btn-primary">Find Recipes</button>
+            <button id="clear-selection" class="btn-secondary">Clear Selection</button>
+            <span id="selection-count" class="selection-count">0 selected</span>
+          </div>
+
+          <div class="rarity-columns">
+            <div class="rarity-column" data-rarity="common">
+              <h3>Common</h3>
+              <div id="common-list" class="ingredient-list"></div>
+            </div>
+            <div class="rarity-column" data-rarity="uncommon">
+              <h3>Uncommon</h3>
+              <div id="uncommon-list" class="ingredient-list"></div>
+            </div>
+            <div class="rarity-column" data-rarity="rare">
+              <h3>Rare</h3>
+              <div id="rare-list" class="ingredient-list"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="ingredient-results" class="results-panel">
+          <h2>Results</h2>
+          <p class="hint">Select at least 3 ingredients and click Find Recipes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-potions" class="view">
+      <div class="tool-intro">
+        <h2>Choose a Potion</h2>
+        <p>Click on any potion to see every 3-ingredient combination that can create it.</p>
+      </div>
+
+      <div id="potion-loading" class="loading">Loading potion recipes...</div>
+
+      <div class="potion-layout">
+        <div id="potion-list" class="potion-list-panel"></div>
+        <div id="potion-recipes" class="results-panel">
+          <h2>Recipes</h2>
+          <p class="hint">Select a potion from the list to view its recipes.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Obojima Potion Tools — private</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

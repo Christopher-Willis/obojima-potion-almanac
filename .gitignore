@@ -1,0 +1,4 @@
+# Local dev server
+__pycache__/
+*.pyc
+.DS_Store

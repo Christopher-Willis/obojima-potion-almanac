@@ -1,0 +1,1577 @@
+[
+  {
+    "name": "AMBER",
+    "rarity": "common",
+    "combat": 9,
+    "utility": 5,
+    "whimsy": 4,
+    "description": "This chunk of petrified tree sap is prized for its color and gem-like luster and is often used in jewelry. Some arcane jewelers claim that it has special properties, especially if an ancient insect is trapped within it. Amber can be found in rocky areas where petrified wood is found, and it has been known to wash up on certain beaches.",
+    "regions": [
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "APPER CARROT",
+    "rarity": "common",
+    "combat": 0,
+    "utility": 3,
+    "whimsy": 1,
+    "description": "The Apper Carrot is well known throughout Obojima as a superior strain of carrot that has a delicious flavor and a hearty crunch. Its bulbous top peeks out from the soil when it’s ready for harvesting, making it easy for foragers to spot Apper Carrots in the wild. They can be found in most grassy lowland areas.",
+    "regions": [
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI"
+    ]
+  },
+  {
+    "name": "BAMBOO",
+    "rarity": "common",
+    "combat": 3,
+    "utility": 3,
+    "whimsy": 3,
+    "description": "Used in everything from building material to drinking vessels and musical instruments, bamboo is perhaps the most versatile material on the island. Patches of bamboo can be found in most places on Obojima, however there are a few bamboo forests in the foothills and mountainous regions where it can grow as thick as a tree.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "BASHU POWDER",
+    "rarity": "common",
+    "combat": 2,
+    "utility": 0,
+    "whimsy": 0,
+    "description": "This russet powder is made from the ground seed pods of the bashu tree. Bashu powder is used commonly by chefs who want to add a spicy yet smoky flavor to their dishes. Most Obojimans believe that bashu powder also helps alleviate minor ailments like coughs and colds. Bashu trees are found inland in the warm and arid regions of Obojima.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER"
+    ]
+  },
+  {
+    "name": "BLUE BACK SALMON",
+    "rarity": "common",
+    "combat": 3,
+    "utility": 4,
+    "whimsy": 7,
+    "description": "The fat-marbled, delicious flesh of the blue back salmon are a staple in many villages across the island. A fully grown salmon can reach up to almost two meters in length and any fisherman will tell you that they are crafty, hard to catch, and can deliver a nasty bite. Blue back salmon are found in rivers all across Obojima and in the deepest parts of the surrounding reef.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "SHALLOWS",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "BOOM BERI",
+    "rarity": "common",
+    "combat": 7,
+    "utility": 6,
+    "whimsy": 1,
+    "description": "These small red berries are a delicious sweet treat for roughly three weeks of the year. Outside of that time they’re quite disgusting and left untouched by forest dwellers. They’re often found near the base of mountains or cliff faces.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "BORA BUG",
+    "rarity": "common",
+    "combat": 4,
+    "utility": 8,
+    "whimsy": 3,
+    "description": "These hazelnut-sized beetles can be found sipping the sugary sap from trees or drinking the juice from overripe fruit that has fallen to the forest floor. Obojimans crush up dried bora bugs to produce a beautiful turquoise dye.Bora bugs are usually found on or around any tree that produces fruit or a sweet sap.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "BRUSH REED",
+    "rarity": "common",
+    "combat": 1,
+    "utility": 10,
+    "whimsy": 6,
+    "description": "Aside from making a nifty hairbrush, brush reed is also well-known for its potion making properties. Brush reeds can be found next to ponds and lakes in the lowland areas.",
+    "regions": [
+      "LAND OF HOT WATER",
+      "SHALLOWS",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "BUNDLE OF DRIKO TWIGS",
+    "rarity": "common",
+    "combat": 1,
+    "utility": 1,
+    "whimsy": 2,
+    "description": "The aromatic wood of the driko tree is a common scent in temples, shrines, and village markets on Obojima. Many woodcutters dry stacks of driko twigs in the sun making the summer months smell fantastic. Aside from being able to get driko twigs in almost any village, there are an abundance of driko trees all over the island.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "CAMP MITE",
+    "rarity": "common",
+    "combat": 6,
+    "utility": 4,
+    "whimsy": 8,
+    "description": "These small, spherical bugs are covered in stiff hairs that enable them to stick to fabric and even skin. They are drawn to the warmth of campfires and bedrolls; a fact attested to by anyone who’s spent more than a couple of nights sleeping under the stars.",
+    "regions": [
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "CHICKEN EGG",
+    "rarity": "common",
+    "combat": 1,
+    "utility": 1,
+    "whimsy": 2,
+    "description": "While to some, an egg is an egg, there are Obojiman chicken farmers who can discuss late into the night the various qualities and virtues of the perfect egg.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "CHISUAY’S HEAVENLY TEA",
+    "rarity": "common",
+    "combat": 2,
+    "utility": 7,
+    "whimsy": 5,
+    "description": "Even outside of potion brewing circles, the properties of Chisuay’s Heavenly Tea is talked about in reverent tones, and there are many competitions around the island to see who makes the best blend of tea, and Chisuay’s Heavenly Tea blend always takes first place. Although wild tea is found throughout the highlands of Obojima, the highest-quality tea is found in fields where heirloom tea is cultivated and raised with great attention and care.",
+    "regions": []
+  },
+  {
+    "name": "CLAY SNAKE TAIL",
+    "rarity": "common",
+    "combat": 8,
+    "utility": 6,
+    "whimsy": 5,
+    "description": "Clay snakes are fairly docile and non-venomous, which makes catching one a fairly easy task. The tips of a clay snake’s tail are in high demand from witches and potion makers, and luckily for the clay snakes, their tails grow back within a few weeks. Clay snakes are found by riverbanks and lakeshores where there are rich deposits of clay, but the most desirable ones are found in the Land of Hot Water.",
+    "regions": [
+      "GALE FIELDS",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "CLOUD HORN",
+    "rarity": "common",
+    "combat": 1,
+    "utility": 0,
+    "whimsy": 0,
+    "description": "Cloud horn flowers bloom in the spring. In the late summer months, a seed pod in the middle of the flower cracks open and a light, fibrous fluff emerges—a fluff that is highly sought after by potion makers and brewers.Cloud horns are usually found in meadows and grasslands, and prefer dry climates.",
+    "regions": [
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI"
+    ]
+  },
+  {
+    "name": "CREEPING BOLETE",
+    "rarity": "common",
+    "combat": 3,
+    "utility": 10,
+    "whimsy": 6,
+    "description": "These colorful mushrooms are constantly on the move, creeping through the forest floor. No one knows exactly what they are looking for, if anything, or if they’re just spreading their spores.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GIFT OF SHURITASHI",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "DORRIN PLATE",
+    "rarity": "common",
+    "combat": 7,
+    "utility": 8,
+    "whimsy": 4,
+    "description": "Dorrin plate is a naturally occurring stone that can be broken off in large sheets and used as roof tiles, crockery, or building material. Potion makers have discovered that Dorrin plate is filled with minute crystals that are good for enhancing magic properties. Dorrin plate is found in rock formations near the mountain town of Dorrin.",
+    "regions": []
+  },
+  {
+    "name": "DRIED FRUIT",
+    "rarity": "common",
+    "combat": 2,
+    "utility": 1,
+    "whimsy": 4,
+    "description": "Dried fruit is plentiful on Obojima but there are certain artisans who know how to preserve and concentrate the flavor and vibrancy of the fruit in such a way that it borders on mysticism. Although dried fruit can be bought at markets and from farmers from all over Obojima, the best dried fruit for making potions is from fruit trees that grow around the base of Mount Arbora.",
+    "regions": []
+  },
+  {
+    "name": "EARWAX",
+    "rarity": "common",
+    "combat": 0,
+    "utility": 0,
+    "whimsy": 0,
+    "description": "An unpleasant truth is that the role of earwax in potion making is more important than people like to discuss. Though earwax is plentiful, it’s not all the same in potion mixing terms, and some varieties come at a steeper price than others.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "FISH FOLK TOOTH",
+    "rarity": "common",
+    "combat": 9,
+    "utility": 4,
+    "whimsy": 3,
+    "description": "Fish folk teeth have long been used by witches in making potions, especially those used for breathing underwater. Fish folk go through many teeth in their lifetimes and over the centuries, thousands of discarded teeth have washed up on the coastline near their underwater caves and grottoes. But a word to the wise, most fish folk are very territorial and are not fond of interlopers idly beachcombing on their shores.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "SHALLOWS",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "FISH HEAD",
+    "rarity": "common",
+    "combat": 4,
+    "utility": 5,
+    "whimsy": 4,
+    "description": "For potion brewing, any old stinky fish head will do.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "SHALLOWS",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "FLASH PAPER",
+    "rarity": "common",
+    "combat": 6,
+    "utility": 9,
+    "whimsy": 1,
+    "description": "This highly combustible paper can be procured during the numerous festivals that villages all over Obojima celebrate during the various seasons. Because of these festivals, there is a tradition of making flash paper and every village makes a different variation from ones that burn in bright, vivid colors to others that sizzle and whistle.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER"
+    ]
+  },
+  {
+    "name": "GOHAKU RICE",
+    "rarity": "common",
+    "combat": 3,
+    "utility": 2,
+    "whimsy": 3,
+    "description": "For some reason, the lustrous and plump rice grown in the Gohaku region is always of exceptional quality and taste. At some point, the magical properties of the rice were discovered, a fact that Gohaku rice farmers talk about with a certain amount of pride.",
+    "regions": [
+      "LAND OF HOT WATER",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "GREEN SLIME",
+    "rarity": "common",
+    "combat": 8,
+    "utility": 6,
+    "whimsy": 7,
+    "description": "Green slime appears as a viscous green mass with weak acidic properties. Healers favor green slime as an unguent in topical ointments. Howlers often keep globules of green slime tucked in their cheeks. The substance green slime is cultivated from larger, living omnivorous monsters of the same name.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "HAKUMA SAPWOOD",
+    "rarity": "common",
+    "combat": 5,
+    "utility": 1,
+    "whimsy": 9,
+    "description": "Hakuma sapwood is a fragrant and combustible wood that comes from the center of the hakuma tree. It is burned at shrines and sacred sites throughout Obojima, delivering a complex and pleasing incense that clears the mind and soothes the soul. Hakuma trees are quite common across the island, but unless you are a priest, a druid, or know the proper rituals, most Obojimans frown on taking limbs from these trees.",
+    "regions": [
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "HILL DRAGON EGG",
+    "rarity": "common",
+    "combat": 9,
+    "utility": 3,
+    "whimsy": 8,
+    "description": "Looking like pumpkin-sized acorns, hill dragon eggs can remain dormant in the ground for a year or more before they hatch. Hill dragon eggs are usually buried out of sight, but certain flowers like to grow around burial pits giving their positions away and egg-hunting hogs can be trained to sniff them out. Not known for powerful maternal instincts, hill dragons lay their eggs in clutches all across the plains, dales, and rolling hills of Obojima.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "HOWLER FUR",
+    "rarity": "common",
+    "combat": 10,
+    "utility": 5,
+    "whimsy": 4,
+    "description": "Howler fur has certain arcane properties that are sought after by witches and warlocks for their various brews. Some Obojimans believe that a tuft of howler fur that is burned in a fireplace can ward off evil spirits. Howler fur can be found snagged on bramble thickets, along game trails, and near howler camps within and around the forests and caves where they dwell.",
+    "regions": [
+      "GALE FIELDS",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "ITCHI BERI",
+    "rarity": "common",
+    "combat": 0,
+    "utility": 1,
+    "whimsy": 0,
+    "description": "Itchi berries can be harvested in clusters from under the vibrant green leaves of the Itchi plant, which are known to cause severe rashes on exposed skin. The berries themselves are harmless and sweeten when reduced to a jam.Itchi plants are most often found on riverbanks, their leaves pointing toward the peak of Mount Arbora. Sages have speculated about this phenomenon for generations, but no conclusive evidence has laid the matter to rest.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "JACK-O’-LANTERN BITS",
+    "rarity": "common",
+    "combat": 2,
+    "utility": 1,
+    "whimsy": 3,
+    "description": "Many witches say that the process of carving a jack-o’-lantern bestows a certain amount of magic into the pumpkin, and lighting a candle within it absorbs the energy of the special time of the fall season when most witches agree that magic is at its most potent. Thus, pieces of a jack-o’-lantern are imbued with eldritch energies that are key to certain potions and magics.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI"
+    ]
+  },
+  {
+    "name": "JUMPING BONFIRE",
+    "rarity": "common",
+    "combat": 6,
+    "utility": 4,
+    "whimsy": 10,
+    "description": "This brightly colored flower is well-known throughout Obojima for the unique way that it propagates its seeds. When the flower of a jumping bonfire plant is knocked by a passerby, its petals begin to wriggle about mimicking flames and the seeds within it shoot out from the central stem with an audible popping sound like logs cracking on a fire. The jumping bonfire plant is the delight of children all over Obojima, and every village is sure to have one.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER"
+    ]
+  },
+  {
+    "name": "KLOTH LEECH",
+    "rarity": "common",
+    "combat": 1,
+    "utility": 1,
+    "whimsy": 1,
+    "description": "Kloth leeches are approximately the size of a handkerchief and come in a variety of colors. They tend to gather in groups made up of leeches of different colors, forming what resembles clumps of patchwork cloth. There are druidic communities in the Gale Fields who have learned to make entire garments from trained kloth leeches.",
+    "regions": [
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "KNOBBLE LEAF SEAWEED",
+    "rarity": "common",
+    "combat": 1,
+    "utility": 1,
+    "whimsy": 1,
+    "description": "There are many different kinds of seaweed on and around Obojima, most of which are quite tasty and nutritious, but none is more sought after than knobble leaf. Many cooks use knobble leaf in their soups and salads, and there are some witches and warlocks that use it for spells. Knobble leaf can be found washed up on the beaches of Obojima and growing in thick kelp beds along the sea floor surrounding the island.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "SHALLOWS",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "KOJO ROOT",
+    "rarity": "common",
+    "combat": 6,
+    "utility": 3,
+    "whimsy": 2,
+    "description": "You can find kojo root hanging within every shrine and temple on Obojima as it is considered good luck. Dried kojo root is also ground into a powder and used as seasoning in many dishes across the island.",
+    "regions": [
+      "COASTAL HIGHLANDS"
+    ]
+  },
+  {
+    "name": "LOVERS VINE",
+    "rarity": "common",
+    "combat": 0,
+    "utility": 0,
+    "whimsy": 2,
+    "description": "The lovers vine is actually two distinct vines that have developed a symbiotic relationship where one draws nutrients from the soil and the other provides a strong stem and ability to grasp and climb. Singly, neither vine provides a medicinal or magical effect, but when both are boiled together, their mixed properties are truly potent. Lovers vine can be found in most forests but it is especially fond of marshy areas.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "MANDRAKE ROOT",
+    "rarity": "common",
+    "combat": 8,
+    "utility": 5,
+    "whimsy": 2,
+    "description": "This hardy root is difficult to process and is often boiled for hours before being used medicinally. Once softened the crimson root can be used in a number of balms and elixirs. It is often found in shady areas near the base of shrubs and trees.",
+    "regions": [
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "MELLOWORT",
+    "rarity": "common",
+    "combat": 4,
+    "utility": 8,
+    "whimsy": 7,
+    "description": "Go into any hot spring or spa and the scent of Mellowort is sure to be wafting around with its soothing aroma. There are many songs written by bards about the benefits and relaxing properties of this flowering plant. Mellowort is a tall, slender plant that is found in the lowlands of Obojima.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "MONKEY’S COIL",
+    "rarity": "common",
+    "combat": 2,
+    "utility": 0,
+    "whimsy": 1,
+    "description": "Monkey’s Coil is a tiny flower that sprouts a spiraling growth wound so tightly that it can only be forced open with tremendous strength. Among a local guild of sages from the Coastal Highlands there are those that claim to know the secret of releasing the coil in a less forceful manner. The flower grows on a kind of ivy that links monkey coil flowers together into a lattice that farmers often plant in place of hedgerows.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "MOUNTAIN OX DUNG",
+    "rarity": "common",
+    "combat": 10,
+    "utility": 3,
+    "whimsy": 8,
+    "description": "In the hands of a skilled potion crafter, a nice, sun-dried, ox dung pie has many uses. Mountain oxen roam wild in the foothills and are quite grumpy, so caution is advised.",
+    "regions": [
+      "COASTAL HIGHLANDS"
+    ]
+  },
+  {
+    "name": "MOUSE TREE NUT",
+    "rarity": "common",
+    "combat": 4,
+    "utility": 6,
+    "whimsy": 5,
+    "description": "Despite its overall nutritiousness, the bitter grittiness of the mouse tree nut often precludes it from being eaten as a snack by most folk. However, the mouse tree nut is beloved across the island because of its shell, which is used to make instruments like castanets or a type of flute called a “mouse kisser.” Mouse tree nuts grow on stout, gnarly trees that grow in normally unsuitable areas, such as cliff sides or inside ruined buildings.",
+    "regions": [
+      "COASTAL HIGHLANDS"
+    ]
+  },
+  {
+    "name": "NARUTOMAKI",
+    "rarity": "common",
+    "combat": 0,
+    "utility": 0,
+    "whimsy": 0,
+    "description": "These delicious narutomaki cakes are made in markets and taverns all over the island of Obojima. Many villages have naruto competitions to see who can make the most tasty and aesthetically pleasing naruto cakes, all in honor of the local guardian spirit or to celebrate a good season of fishing or a bountiful harvest.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "NOBBLEWORT",
+    "rarity": "common",
+    "combat": 3,
+    "utility": 1,
+    "whimsy": 2,
+    "description": "Nobblewort is a fairly common lichen whose bumpy, knobbly texture gives it its name. You can often see a bundle of nobblewort hanging from the eaves of many village houses as it is said to ward off bad luck and mischievous spirits. Nobblewort can be found clinging to most deciduous trees across the island.",
+    "regions": [
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "OPORION GLASS",
+    "rarity": "common",
+    "combat": 1,
+    "utility": 10,
+    "whimsy": 0,
+    "description": "This translucent glass can be found in many different colors and is often used by swordsmiths as sharpening stones because of its high durability and fine polish that it leaves on the blade. It is often found underwater or in caves.",
+    "regions": [
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "SHALLOWS"
+    ]
+  },
+  {
+    "name": "ORIGAMI CRANE",
+    "rarity": "common",
+    "combat": 6,
+    "utility": 0,
+    "whimsy": 10,
+    "description": "Obojiman wizards say that due to their focus and intention, origami artists weave subtle energies into the folds and shapes of their creations so that even a simple crane contains a bit of magic. However, the best and most useful cranes are found in sky kite valley.",
+    "regions": [
+      "LAND OF HOT WATER"
+    ]
+  },
+  {
+    "name": "PEEPING WILLOW",
+    "rarity": "common",
+    "combat": 0,
+    "utility": 0,
+    "whimsy": 1,
+    "description": "The peeping willow is known for its peculiar peeper flowers, which bear an unsettling resemblance to eyeballs. Unless dried, the flowers are poisonous to eat. The “eyelid” petals are prized by clothiers as a source of deep red dye.",
+    "regions": [
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "PINK CANDLE WAX",
+    "rarity": "common",
+    "combat": 2,
+    "utility": 2,
+    "whimsy": 0,
+    "description": "Wax tinted pink is part of the folk magic tradition associated most closely with the villages of the Gift of Shuritashi. According to such traditions, minor prayers or blessings are inscribed in the wax. When a candle made from pink wax is lit, it is believed that the magic is released, increasing the likelihood that the prayer will be fulfilled. The practice remains common in rural communities, while brewers across Obojima seek the wax for their own trade. Pink candle wax is found in most herbalist and wizarding shops.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER"
+    ]
+  },
+  {
+    "name": "POISON",
+    "rarity": "common",
+    "combat": 9,
+    "utility": 8,
+    "whimsy": 0,
+    "description": "There’s nothing like a good old-fashioned poison to spice up a potion.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "PUNGENT SEA FOAM",
+    "rarity": "common",
+    "combat": 5,
+    "utility": 7,
+    "whimsy": 5,
+    "description": "Collected from the seashore in corrupted areas, this sea foam is toxic to the touch. Only the most skillful of potion makers can use its magic properties without causing harm.",
+    "regions": [
+      "SHALLOWS"
+    ]
+  },
+  {
+    "name": "PYRAMID MELON",
+    "rarity": "common",
+    "combat": 2,
+    "utility": 2,
+    "whimsy": 2,
+    "description": "Some druids claim that the pyramid melon gets its shape from the forces that form the cosmos. and to contemplate the melon will reveal secrets beyond space and time. Most children, however, simply enjoy the tart fruit and make a game of spitting the seeds.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "QUEEN’S DILEMMA",
+    "rarity": "common",
+    "combat": 7,
+    "utility": 5,
+    "whimsy": 3,
+    "description": "Long ago, when the Nakudama ruled the land, it is said that Queen Okumi was tricked by a wicked beast who sought to steal her heart. As they were about to be betrothed, a mushroom spirit sacrificed itself to poison the beast and reveal his true nature. Because of the mushroom’s courage, Queen Okumi spread its spores throughout Obojima, and that is why queen’s dilemma mushrooms are so plentiful.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "RAKA PASTE",
+    "rarity": "common",
+    "combat": 4,
+    "utility": 10,
+    "whimsy": 0,
+    "description": "A pulpy mixture of soot and the oil pressed from the seeds of a raka plant, raka paste is commonly used to repair broken pottery vessels. When it dries, it hardens into a glossy glass-like substance. Many households have raka paste, which is commonly stored in a shallow hexagonal dish and covered in a film of wax to keep it from drying out.",
+    "regions": [
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "RATTLE SHOOT",
+    "rarity": "common",
+    "combat": 10,
+    "utility": 8,
+    "whimsy": 7,
+    "description": "Rattle shoot plants are wanted for their seed pods which dry out in the summer. As soon as the first rain comes, the seeds begin to rattle inside the dry pods and then blast out in a peppering of seeds that scatter them a great distance. Rattle shoot plants are found mainly in the Gale Fields in the center of the island.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "RIBBON ROT",
+    "rarity": "common",
+    "combat": 5,
+    "utility": 3,
+    "whimsy": 9,
+    "description": "Ribbon rot is a strain of purple mold that devours wood. Obojiman villagers are always on the lookout for any signs of this as ribbon rot can quickly eat the supports of a house and bring the whole structure down within a matter of months. Ribbon rot can be found in old, dilapidated houses and snags within damp forests.",
+    "regions": [
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "RUST CRAB",
+    "rarity": "common",
+    "combat": 8,
+    "utility": 4,
+    "whimsy": 2,
+    "description": "Rust crabs are plentiful and cantankerous, making them a prize for fisherman but a tricky crab to catch as they often clip through cages with their unusually strong claws. Rust crabs are quite fond of chicken. They can be found in the waters surrounding Obojima.",
+    "regions": [
+      "SHALLOWS"
+    ]
+  },
+  {
+    "name": "SCALEFRUIT RIND",
+    "rarity": "common",
+    "combat": 4,
+    "utility": 2,
+    "whimsy": 2,
+    "description": "Scalefruit are fist-sized fruits that are covered by a thick, scaly rind. Although the outside of a scalefruit is rather unappetizing, the interior is sweet and delicious, and is easily scooped after the fruit is cut in half. Many scalefruit farmers can be easily identified as they always carry a sharp cleaver and a metal scoop. Scalefruit trees are found along the coastline as they love sandy soil. Many seaside villages have their own creative versions of scalefruit drinks that they proudly serve to travelers.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "SEA WATER",
+    "rarity": "common",
+    "combat": 1,
+    "utility": 0,
+    "whimsy": 0,
+    "description": "Sea water is a staple in many potion brewing processes but some master potion makers will demand seawater from certain areas around Obojima due to the particular elements, minerals, and energies present in the waters around that particular region. For those adventurers with a penchant for fibbery or a desire for easy money, a master can taste the difference in the waters around Obojima, so don’t try to fool them with just any old sea water.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "SHALLOWS",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "SEASHELL",
+    "rarity": "common",
+    "combat": 0,
+    "utility": 0,
+    "whimsy": 1,
+    "description": "The beaches of Obojima are covered with different kinds of seashells. Many paths and walkways in the seaside villages are covered with simple white shells. Some of the more decorative ones are sold in shops.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "SHALLOWS",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "SHEEP DRAGON WOOL",
+    "rarity": "common",
+    "combat": 10,
+    "utility": 8,
+    "whimsy": 7,
+    "description": "The thick wool of the sheep dragon has been used by Obojimans for centuries as clothing, blankets, and even felt armor. Many villages have dyed sheep dragon wool in many vibrant colors. While most sheep dragons are domesticated, there are still wild sheep dragons roaming the grasslands of Obojima.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "SNAP VINE SAP",
+    "rarity": "common",
+    "combat": 0,
+    "utility": 2,
+    "whimsy": 0,
+    "description": "Snap vines are carnivorous plants with a thick central stalk and many thinner grasping, hook-like tendrils that they use to ambush unsuspecting birds and small rodents. The sap is a viscous orange-red fluid.",
+    "regions": [
+      "COASTAL HIGHLANDS"
+    ]
+  },
+  {
+    "name": "SPINDLE LEG SPIDER WEBS",
+    "rarity": "common",
+    "combat": 5,
+    "utility": 9,
+    "whimsy": 6,
+    "description": "The silky, strong webs of the spindle leg spiders are woven in thick hammock-like nets under bushes and in dense tall grass. The webs are strong enough to catch small animals which the spindle web spiders wrap and hang in their silken larder. Spindle leg spiders are found in forests, under large bushes, and in areas where the grass grows tall.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI"
+    ]
+  },
+  {
+    "name": "SPIRIT ROOT",
+    "rarity": "common",
+    "combat": 6,
+    "utility": 0,
+    "whimsy": 9,
+    "description": "Spirit root is called such because many Obojimans believe that if you leave it under your pillow at night it will remove any bad spirits—especially those who plague children with nightmares. Some villagers also believe that spirit roots are where dara come from. Spirit root can be found growing out from between rocks in and around mountainous and seemingly desolate areas.",
+    "regions": [
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "SQUID INK",
+    "rarity": "common",
+    "combat": 4,
+    "utility": 9,
+    "whimsy": 7,
+    "description": "Squid ink is highly sought after by calligraphers and fine clothiers as the ink makes for excellent writing ink and a rich, colorful dye for the finest clothes. Some chefs also prize the ink to add some color and a unique flavor to their soups and dishes. Squid ink can be found in the many different kinds of squid that live in the waters surrounding Obojima.",
+    "regions": [
+      "SHALLOWS"
+    ]
+  },
+  {
+    "name": "TANGLE WEED",
+    "rarity": "common",
+    "combat": 8,
+    "utility": 8,
+    "whimsy": 4,
+    "description": "Fisherfolk are at constant war with these plants, which snare fishing lines. It is commonly believed that tangle weed is not natural but is a species bewitched by fish folk to torment land dwellers who come too close to the water. This invasive species can be found clumped together throughout the Shallows.",
+    "regions": [
+      "SHALLOWS"
+    ]
+  },
+  {
+    "name": "UBE",
+    "rarity": "common",
+    "combat": 2,
+    "utility": 6,
+    "whimsy": 5,
+    "description": "Ube has long been eaten as a staple by Obojimans and there is rarely a festival feast that doesn’t feature ube cooked in a variety of ways. Many villages have a shrine with offerings dedicated to the spirit of the ube, usually in the form of a jolly spirit yam. While ube grows wild, there are many farmers who cultivate it to create new, more delicious varieties, especially in the western foothills and lowlands where the climate is just right.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "VARROW",
+    "rarity": "common",
+    "combat": 0,
+    "utility": 1,
+    "whimsy": 0,
+    "description": "Every Obojiman has fond memories of the scent of varrow on summer days as the plant secretes a fragrant resin to protect its leaves on days when the sun is hot. Many Obojimans use varrow as flavoring in teas or as an incense as its smoke has a distinct and pleasant aroma. Along with its medicinal properties, varrow, fresh or dried, is a good base for any magic potion. Varrow grows almost everywhere on Obojima but is commonly found near the coast.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "VENUS FLY RAT",
+    "rarity": "common",
+    "combat": 9,
+    "utility": 2,
+    "whimsy": 8,
+    "description": "Named after a strange document found in the ancient observatory, the Venus fly rat can draw blood from an unwary beast without any sensation, using its needle-sharp teeth and numbing saliva. Swarms of Venus fly rats have been known to kill livestock, making them the bane of farmers everywhere. Venus fly rats live in caves near the observatory where the first of their kind was found. They echo-locate in the darkness using their ears and sensitive pronged tails.",
+    "regions": [
+      "COASTAL HIGHLANDS"
+    ]
+  },
+  {
+    "name": "WINDBLOOM",
+    "rarity": "common",
+    "combat": 6,
+    "utility": 7,
+    "whimsy": 0,
+    "description": "These miniature sweet-smelling flowers drift in vast clouds, staying aloft for weeks riding wind currents. It is not uncommon for windbloom clouds to attract various swarms of pollinating insects. Though they are most commonly found in their airborne state in the Gale Fields and the Land of Hot Water, windblooms originate on the slopes of Mount Arbora, clinging to sparse patches of earth.",
+    "regions": [
+      "GALE FIELDS",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "WITCH’S BROOM",
+    "rarity": "common",
+    "combat": 3,
+    "utility": 0,
+    "whimsy": 5,
+    "description": "The thick, straight stalks of witch’s broom are perfect for enchanting as they don’t warp or shatter when imbued with powerful magic—especially the kind used for flying brooms. But other parts of witch’s broom—the leaves and flowers—are used as well for making potions and herbal concoctions. Witch’s broom can be found in abundance along roadsides and pathways of Obojima.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "WITCH’S EYE CORAL",
+    "rarity": "common",
+    "combat": 1,
+    "utility": 0,
+    "whimsy": 10,
+    "description": "This coral is seen as a bad omen by most Obojiman fisher folk. Some say that a new clump of witch’s eye coral grows every time a curse is uttered. Witch’s eye coral can be found after some underwater searching in most parts of the Shallows.",
+    "regions": [
+      "SHALLOWS"
+    ]
+  },
+  {
+    "name": "YUGI SAP",
+    "rarity": "common",
+    "combat": 0,
+    "utility": 4,
+    "whimsy": 2,
+    "description": "Though yugi sap is commonly found seeping from trees of every species, it is not a naturally occurring substance. Spirits who retreat into a tree have a transformative effect on it. Leaves might grow in a different shape or color, or a dazzling new fruit might emerge. However, every tree inhabited by a spirit produces yugi sap. This sticky substance is often used as a sweetener. However, some canny craftspeople know the secret to making strong glass-like vessels from it.",
+    "regions": [
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "YUMA SHRUB",
+    "rarity": "common",
+    "combat": 5,
+    "utility": 8,
+    "whimsy": 4,
+    "description": "The leaves of the yuma shrub secrete a strong, pleasant-smelling oil that is known to repel biting insects and flies. Most soapmakers use yuma shrub oil in their soaps, and dogs and cats are often seen with a cluster of yuma leaves tied to their collars to keep fleas and ticks away. Once the smell of the yuma shrub is experienced, then they are quite easy to find by their smell alone and they can be found all over the island.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "BLACK CINNAMON",
+    "rarity": "uncommon",
+    "combat": 16,
+    "utility": 12,
+    "whimsy": 11,
+    "description": "For some reason that is unknown, black cinnamon trees emanate a subtle magic and one in every hundred or so cinnamon trees across Obojima gains this special trait. There are many legends surrounding the first black cinnamon tree. Kuroki village tells the tale of a wizard who walked into a cinnamon tree, turning it black—the sacred tree still stands to this day in the center of Kuroki Temple.",
+    "regions": [
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "BLACK PEARL",
+    "rarity": "uncommon",
+    "combat": 13,
+    "utility": 14,
+    "whimsy": 15,
+    "description": "Nothing is more coveted by purveyors of magic than the dreamlike luster of a black pearl. Some magicians claim that gazing into the swirling iridescence of a black pearl can bring you visions of a possible future event or help you find a missing object. Black pearls are found inside the giant hornshell clams that are found in the Shallows around Obojima, and most of these are guarded fiercely by fish folk warriors.",
+    "regions": [
+      "SHALLOWS"
+    ]
+  },
+  {
+    "name": "BOTTLE CAP (SUPA-FIZZ!)",
+    "rarity": "uncommon",
+    "combat": 11,
+    "utility": 13,
+    "whimsy": 16,
+    "description": "Perhaps the metal of the bottle cap is why they contain latent magic so sought after by potion makers… or perhaps is simply the power of Supa-Fizz! With a bit of knowledge and some diligent digging, these bottle caps can be found in and around the more habitable areas of Obojima.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "SHALLOWS",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "CORRUPTED SEAWATER",
+    "rarity": "uncommon",
+    "combat": 17,
+    "utility": 11,
+    "whimsy": 14,
+    "description": "Only the most advanced brewers or the most demented witches and warlocks are willing to expose themselves to Corrupted seawater as there is still little known about it. This purplish water has the Corruption’s signature sickly, acrid stench. For those who are intrepid enough to venture to the eastern side of Obojima, Corrupted seawater is easy enough to find, but be sure to bring a container that can keep the noxious fluid from spreading its contamination.",
+    "regions": [
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "CORRUPTED SLIME",
+    "rarity": "uncommon",
+    "combat": 16,
+    "utility": 14,
+    "whimsy": 13,
+    "description": "Slime that has become affected by the Corruption becomes opaque and inky, staining things it comes in contact with. Corrupted slime retains its viscosity but it’s quite sticky. By all accounts, being near Corrupted slime is uniquely unpleasant and those who touch it have been known to become lethargic and listless. Corrupted slime can be cultivated from slime monsters that have themselves been corrupted.",
+    "regions": [
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "CRACKLING JASPER",
+    "rarity": "uncommon",
+    "combat": 17,
+    "utility": 15,
+    "whimsy": 12,
+    "description": "Some say that crackling jasper contains restless fire spirits that incessantly battle among one another causing the stones to spit sparks, shoot tiny flames, and sometimes burst apart with a bang. Obojimans are known to put crackling jasper into tin cans tied to poles during festivals to scare away mischievous spirits. Crackling jasper is found near hot springs and lava tubes within the Land of Hot Water.",
+    "regions": [
+      "LAND OF HOT WATER"
+    ]
+  },
+  {
+    "name": "DAWN PETAL",
+    "rarity": "uncommon",
+    "combat": 11,
+    "utility": 13,
+    "whimsy": 17,
+    "description": "The petals of the dawn blossom petals are admired by Obojimans for their unique shape, fragrance, and golden luster. Dawn blossom trees don’t propagate like other trees as each dawn blossom tree has been planted by a nature spirit that then inhabits the tree. Despite the efforts of ambitious horticulturists, dawn blossom trees only grow where they are planted by their host spirit. Because of this, they are quite uncommon and considered sacred by most villagers.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "DRAGON ROOT",
+    "rarity": "uncommon",
+    "combat": 14,
+    "utility": 15,
+    "whimsy": 16,
+    "description": "There is no discernable rhyme or reason for where dragon root is located on Obojima. But like all such mysteries, legends abound. The story most often repeated regarding dragon root claims that wherever it is found, it marks the footfalls of a spirit dragon from a bygone age named Runivarish. Whether or not this is true, or not, locals do find it peculiar that dragon root, once harvested, will grow in the exact same spot, as if marking something.Dragon root burns hotter than most woods and coals and is therefore valuable to both brewers and smiths.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "ESSENCE OF GLUMBUG",
+    "rarity": "uncommon",
+    "combat": 11,
+    "utility": 11,
+    "whimsy": 17,
+    "description": "Whoever first learned the art of glumbug tickling has been lost to time, but there are a few old-timers left who are willing to teach a willing pupil a few tricks. Glumbug ticklers are the only ones who know how to extract the glowing glumbug essence, as it cannot be gathered by squashing or dissecting the shiny bugs. Glumbugs are mostly found under stones and in caves.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "ESSENCE OF ILL OMEN",
+    "rarity": "uncommon",
+    "combat": 16,
+    "utility": 12,
+    "whimsy": 11,
+    "description": "There is great debate among witches whether this mercurial substance is caused by or is the cause of evil tidings, though it is understood that this ashy residue is a potent component in warding magic or spells associated with fortune. Essence of Ill Omen is created spontaneously as a kind of magical feedback from divination magic, which manifests as a puff of sooty vapor that can be captured in any kind of airtight vessel.",
+    "regions": []
+  },
+  {
+    "name": "FEATHER ROCK",
+    "rarity": "uncommon",
+    "combat": 13,
+    "utility": 17,
+    "whimsy": 15,
+    "description": "As its name suggests, feather rock is a paradoxical stone with a peculiar nature that seems to contradict the pull of gravity. These spindle-shaped stones always reach skyward, while remaining anchored to the ground on a tapered point. Even if these stones are tipped over, they return to their “reaching” position. Howlers covet feather rock. Small chunks of feather rock are distributed across the island, but larger stones are found in deposits primarily in the Gale Fields.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "FIZZING GREEN",
+    "rarity": "uncommon",
+    "combat": 12,
+    "utility": 14,
+    "whimsy": 12,
+    "description": "Deep within the forests of Obojima, there is a very special plant called a spiral fern that is the source of fizzing green. Only a few druids and naturalists know the secret to getting a spiral fern to release fizzing green, and they are reluctant to tell, but will gladly go and harvest the strange, effervescent substance for a trade.",
+    "regions": [
+      "GIFT OF SHURITASHI"
+    ]
+  },
+  {
+    "name": "FORGE SLAG",
+    "rarity": "uncommon",
+    "combat": 15,
+    "utility": 14,
+    "whimsy": 11,
+    "description": "Forge slag can be gathered at any foundry or blacksmithing forge, but the slag created by the fire and hammer strokes of a master smith is what potion makers are searching for, as there is always latent magic in the work of a master.",
+    "regions": [
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "GARGOYLE POWDER",
+    "rarity": "uncommon",
+    "combat": 15,
+    "utility": 16,
+    "whimsy": 13,
+    "description": "Gargoyle powder comes from ground-up dragon eggs that have been encased in ash from ancient eruptions. Grinding up these eggs releases the magic within their bones and is often used in petrification spells, hence the name. Gargoyle powder can be bought or traded only with merchants and wizards who specifically deal with such materials. Other than that, seeking out petrified eggs in the ancient ash fields on the sides of the volcano is a much more difficult and perilous task.",
+    "regions": [
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "GLOW WORMS OF THE VALE",
+    "rarity": "uncommon",
+    "combat": 12,
+    "utility": 15,
+    "whimsy": 14,
+    "description": "Glow worms are found in caves and marshes across Obojima and work fine as ingredients in potions, but intrepid potion brewers have discovered that the wildly-colored glow worms found in the Vale of Abundance in the Gale Fields have a much greater potency.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "HAKUMON’S RAMEN BROTH",
+    "rarity": "uncommon",
+    "combat": 12,
+    "utility": 14,
+    "whimsy": 17,
+    "description": "The ramen broth made by master ramen chef, Hakumon, is legendary among chefs and potion makers alike for its particularly potent effects. Many ramen competitors and potion makers have been known to pay a high price to secure a container-full of broth from Hakumon’s famed ramen shop. But be warned! For Hakumon, ramen is no laughing matter, and the master chef takes great pains to ensure that thieves and miscreants cannot steal his broth so easily.",
+    "regions": [
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "HAPPY JOY CAKE",
+    "rarity": "uncommon",
+    "combat": 12,
+    "utility": 13,
+    "whimsy": 12,
+    "description": "The makers of Happy Joy Cake are a secretive family and it is believed that at least one of them is a spirit, but Obojimans are nevertheless in love with the small, bite-sized treats whose recipe has been handed down for generations. Although Happy Joy Cakes are made only in Yatamon, there are a few trusted traveling merchants who are allowed to distribute them across the island.",
+    "regions": [
+      "GIFT OF SHURITASHI"
+    ]
+  },
+  {
+    "name": "KOJOBI FRUIT",
+    "rarity": "uncommon",
+    "combat": 14,
+    "utility": 14,
+    "whimsy": 14,
+    "description": "Almost every village has a couple of kojobi trees in it but they only fruit every two or three years. When a kojobi tree bears fruit it is a cause for celebration and everyone comes to take part in a Kojobi Festival where the abundant fruit is made into all kinds of dishes and beverages to be enjoyed by all.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER"
+    ]
+  },
+  {
+    "name": "LAUGHING MOSS",
+    "rarity": "uncommon",
+    "combat": 11,
+    "utility": 16,
+    "whimsy": 16,
+    "description": "Laughing moss is well-known amongst naturalists and woodcutters, as it’s fairly easy to find when you know what you’re looking for. To find a patch of this moss is quite simple, as all you need to do is head to the woods and listen for the distinctive sounds of hearty laughter emanating from a campsite in the evening. Along with finding it in the wild, laughing moss is sold in special apothecaries around the island.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "LIONS BLUME",
+    "rarity": "uncommon",
+    "combat": 17,
+    "utility": 13,
+    "whimsy": 16,
+    "description": "This carnivorous flower is characterized by a maw at the center of its array of honey-colored petals. Beekeepers consider the flower an invasive weed that devours bee populations. Lions blume grows in patches known as prides on the high moors of the Coastal Highlands. Each pride has its own lineage which tries to choke out other prides growing nearby. Brewers seek out lions blume because of the flower’s milky sap as well as its “teeth.”",
+    "regions": [
+      "COASTAL HIGHLANDS"
+    ]
+  },
+  {
+    "name": "LIVING SPUD",
+    "rarity": "uncommon",
+    "combat": 14,
+    "utility": 12,
+    "whimsy": 17,
+    "description": "Every now and then, a spud pops out of the ground and begins a long meandering trek. Obojiman farmers call them “living spuds” and they are objects of curiosity and reverence. Wagons will stop on roads and people in crowded markets will make way to let a living spud trundle through. But whatever it is that animates these wayward potatoes, that magic is desired by potion brewers who will use even the smallest snip of a living spud to power their brews.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "MAGIC MONK’S RICE WINE",
+    "rarity": "uncommon",
+    "combat": 16,
+    "utility": 12,
+    "whimsy": 15,
+    "description": "Magic Monk’s Rice Wine is a delicious and refreshing high-end spirit. Many who imbibe it say it stimulates the intellect and afterward their dreams are far more vivid. On each of the solstices, a delivery of Magic Monk’s Rice Wine is handled by teams of spirits who mysteriously appear and distribute it to the taverns and temples of Obojima. Magic Monk’s Rice Wine is brewed and distilled in some unknown location within the spirit realm.",
+    "regions": []
+  },
+  {
+    "name": "MOLTED LIZARD SKIN",
+    "rarity": "uncommon",
+    "combat": 15,
+    "utility": 12,
+    "whimsy": 12,
+    "description": "For maximum results, try to find a whole skin that has been thoroughly dried by the sun. The crispier the better.",
+    "regions": [
+      "LAND OF HOT WATER"
+    ]
+  },
+  {
+    "name": "MOUNTAIN SNAIL",
+    "rarity": "uncommon",
+    "combat": 14,
+    "utility": 15,
+    "whimsy": 12,
+    "description": "As a potion ingredient, the mountain snail’s value is in its shell, which when pulverized into a powder, is used in magics associated with protection. However, it’s a perilous pursuit cultivating mountain snails, for they tend to live in the lairs of dangerous predators who live in mountain caves. There, the snails feed off meat scraps left behind. The snails avoid detection by masquerading as stones, though they are drawn to music.",
+    "regions": [
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "MOURNSHADE",
+    "rarity": "uncommon",
+    "combat": 13,
+    "utility": 14,
+    "whimsy": 13,
+    "description": "Mournshade is used by healers across the island for what they believe is the plant’s ability to absorb painful emotions. Although it is rare to find in the wild, there always seems to be someone in the village who has a sachet full of mournshade just incase.\nMournshade is found in bogs and swampy wetlands where it faintly glows on moonless nights.",
+    "regions": [
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "MUNCHANKA ROOT",
+    "rarity": "uncommon",
+    "combat": 17,
+    "utility": 11,
+    "whimsy": 11,
+    "description": "The root of the deadly munchanka plant must be handled and processed with skill and care, for it is said that those who have eaten the wrong parts of this plant have been driven mad. Munchanka root can be found in dry, arid regions.",
+    "regions": [
+      "GIFT OF SHURITASHI"
+    ]
+  },
+  {
+    "name": "NAKUDAMA SPICE",
+    "rarity": "uncommon",
+    "combat": 12,
+    "utility": 15,
+    "whimsy": 14,
+    "description": "With its distinct earthy flavor, this spice was once part of a culinary fad among Nakudama. It has since fallen out of fashion, but the name remains. The spice comes from the zelk bean, which grows from a species of pond lily. These beans are harvested, fermented, and then dried before being ground into a purple powder. A few Nakudama farmers continue to make it, but because the process of producing Nakudama spice is time-consuming and labor-intensive, it isn’t cheap.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GIFT OF SHURITASHI"
+    ]
+  },
+  {
+    "name": "NIGHT THISTLE",
+    "rarity": "uncommon",
+    "combat": 14,
+    "utility": 17,
+    "whimsy": 16,
+    "description": "It is said that the night thistle came with the Corruption and only grows on the graves of restless spirits. It blooms only on the darkest night of the new moon, putting forth an eerily skeletal, bioluminescent flower that attracts nocturnal pollinators. Night thistles are only found near and within corrupted regions making it dangerous to collect.",
+    "regions": [
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "NOODLE EEL",
+    "rarity": "uncommon",
+    "combat": 13,
+    "utility": 12,
+    "whimsy": 16,
+    "description": "Every now and then, a ramen chef finds a gorged noodle eel sleepily coiled in an empty bowl of theirs. All ramen chefs see them as pests as apparently noodle eels have a rather refined palate and don’t come to just any bowl of broth, seeking only to slurp down the finest ramen—a major irritant to serious chefs. This makes catching one difficult as it requires good ramen and no self-respecting chef will sacrifice their work for bait.",
+    "regions": [
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "SHALLOWS",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "OPU OPU SPRING WATER",
+    "rarity": "uncommon",
+    "combat": 11,
+    "utility": 16,
+    "whimsy": 14,
+    "description": "The sacred water from the Opu Opu Spring has always been famous for its healing properties. Villagers would come from all around and make the long trek up into the mountains to collect the spring water, but recently a large troll has moved into the area and the villagers have been too afraid to travel there. Because of this, supplies of the spring water are now at an all-time low.",
+    "regions": [
+      "MOUNT ARBORA"
+    ]
+  },
+  {
+    "name": "PETRIFIED ALLIGATOR",
+    "rarity": "uncommon",
+    "combat": 15,
+    "utility": 16,
+    "whimsy": 13,
+    "description": "Bards speak of the mad druid Fennistrix, who had a penchant for petrification along with a bizarre alligator obsession that resulted in almost all of the alligators on Obojima being petrified and displayed. Legend says that when Fennistrix’s taxidermy hut exploded, petrified alligator parts scattered all over the island. It’s rare nowadays to find a foot or a head, let alone an entire alligator, but even a small amount of it ground up releases some of Fennistrix’s potent magic.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "SHALLOWS",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "POK POK FLAKES",
+    "rarity": "uncommon",
+    "combat": 13,
+    "utility": 14,
+    "whimsy": 13,
+    "description": "For those potion makers who have a culinary flair, using dried flakes from the pok pok fish is a way to give a savory and sorcerous kick to any brew. Pok pok fish are notoriously hard to catch, but there are a few fisherfolk on the island who know all the tricks of the trade. They usually sell their wares direct to potion makers or market shops that specialize in potion ingredients and spell components.",
+    "regions": [
+      "SHALLOWS"
+    ]
+  },
+  {
+    "name": "RUBBLE FROM A RUBBLE GOLEM",
+    "rarity": "uncommon",
+    "combat": 16,
+    "utility": 11,
+    "whimsy": 15,
+    "description": "When the animus of a rubble golem falls silent, some amount of magic continues to radiate from the chunks of debris that its body was formed from. At night, occasional motes of white light shoot off from these broken bits. Brewers seek this material for its inherent magical quality, which they can use for various purposes.",
+    "regions": []
+  },
+  {
+    "name": "SCUMWEED",
+    "rarity": "uncommon",
+    "combat": 11,
+    "utility": 12,
+    "whimsy": 11,
+    "description": "Whether it was brought by the Corruption or a local plant was mutated by it, scumweed has appeared on the corrupted coastlines of Obojima and is creeping further inland along sloughs and marshes that are affected by the encroaching Corruption. Scumweed is slimy and thick. Dried scumweed can even make hardy armor in a pinch and more than a few monsters and witches have been known to use it for precisely that purpose.",
+    "regions": [
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "SHADOWROOT",
+    "rarity": "uncommon",
+    "combat": 15,
+    "utility": 13,
+    "whimsy": 12,
+    "description": "This small, knobby root only grows where its black leaves are left in perpetual shadow. Once harvested, the root must be wrapped or sealed away from light or it will rapidly wither and rot.",
+    "regions": [
+      "GIFT OF SHURITASHI",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "SLEEPING MERCHANT",
+    "rarity": "uncommon",
+    "combat": 13,
+    "utility": 13,
+    "whimsy": 13,
+    "description": "Known for its naturally soporific effects, the sleeping merchant got its name through its use by traveling traders who traditionally drink its dried blossoms as a tea after a busy day of hocking their wares. This water lily can be identified by the nodding white blossom under a leafy umbrella. The sleeping merchant only grows in certain ponds and lakes which has made attempts to grow sleeping merchant plants in other bodies of water impossible. Thus, the demand for this plant is high among the tea vendors of Obojima.",
+    "regions": []
+  },
+  {
+    "name": "SPARK PLUG",
+    "rarity": "uncommon",
+    "combat": 11,
+    "utility": 17,
+    "whimsy": 11,
+    "description": "Spark plugs are used by potion makers to add in a small charge of magic, just enough to be a catalyst for a specific reaction. Most Obojimans still have no idea what these strange items are, let alone where they come from but the rangers and rogues who do keep the information to themselves.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "SPIRIT TEA",
+    "rarity": "uncommon",
+    "combat": 11,
+    "utility": 11,
+    "whimsy": 17,
+    "description": "There are many fine teas to be tried all over Obojima, but only a few are legendary. One such tea is made by the master tea blender, Chisuay. It is said that Chisuay leaves his body and brews this tea in the Spirit Realm, then, through powerful magic, he brings this delicate spiritual brew back into the Material Plane. Spirit tea can only be found at Chisuay’s teahouse.",
+    "regions": [
+      "LAND OF HOT WATER"
+    ]
+  },
+  {
+    "name": "SPRING",
+    "rarity": "uncommon",
+    "combat": 14,
+    "utility": 17,
+    "whimsy": 15,
+    "description": "Springs come in various sizes from different machines. Because of their spiral shape and ferrous material, they are prized by magic users to channel energies into spells and potions. Merchants who deal in arcana are always looking for springs found within the ruins of those who came before.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "SUN SHROOM",
+    "rarity": "uncommon",
+    "combat": 13,
+    "utility": 16,
+    "whimsy": 14,
+    "description": "Discovered by the wizard known as Karoglin the Sleepless, the sun shroom allows those who consume it to stay awake for long periods of time. Overuse can lead to extended bouts of uncontrollable laughter and eventually deep restless sleep. Sun shroom has a briny taste and is most commonly consumed by mixing it in tea. Sun shrooms tend to grow near the roots of trees in the Wandering Forest, a fact that has led some to speculate that energizing mushrooms are what keep the trees on the move.",
+    "regions": [
+      "GALE FIELDS"
+    ]
+  },
+  {
+    "name": "TOKA TRUFFLE",
+    "rarity": "uncommon",
+    "combat": 15,
+    "utility": 12,
+    "whimsy": 14,
+    "description": "Toka truffles are the goal of every truffle hunter as their pungency and deliciousness are renowned. But it was only recently that potion makers discovered the magic properties of the truffle, making competition to find these valuable delicacies even more heated. Toka truffles are found underground near oak trees. Apart from magic spells or items, prized truffle hunting hogs are the best way to find these hidden treasures.",
+    "regions": [
+      "GIFT OF SHURITASHI"
+    ]
+  },
+  {
+    "name": "VINYL RECORD",
+    "rarity": "uncommon",
+    "combat": 15,
+    "utility": 15,
+    "whimsy": 15,
+    "description": "These black disks are covered in a continuous spiral that moves to the center of the disk—believed to be an ancient and lost way of recording knowledge. Some sages know how to unlock the messages within the grooves, while many Obojiman potion makers grind or melt these “records” to release the magic they contain. These objects are found in caches where they are often stacked like plates in a restaurant. But discoveries are few and far between, and merchants are sure to drive a hard bargain.",
+    "regions": [
+      "COASTAL HIGHLANDS",
+      "GALE FIELDS",
+      "GIFT OF SHURITASHI",
+      "LAND OF HOT WATER",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "WOLFENITE",
+    "rarity": "uncommon",
+    "combat": 11,
+    "utility": 17,
+    "whimsy": 11,
+    "description": "Wolfenite is found high in the mountains in cracks and crevices between the granite boulders. For those who are more intrepid and willing to take the risk, sneaking into a howler den is another way to find a cache of this rare mineral as they are for some reason drawn to this rare mineral.",
+    "regions": [
+      "GALE FIELDS",
+      "MOUNT ARBORA",
+      "BRACKWATER WETLANDS"
+    ]
+  },
+  {
+    "name": "WYCHWOOD",
+    "rarity": "uncommon",
+    "combat": 14,
+    "utility": 13,
+    "whimsy": 15,
+    "description": "The twisted, spined branches of a wychwood tree are well known by wizards and those who practice magic involving spirits. Many warlocks and druids use wychwood wands for their spellcasting. It is said that wychwood trees only grow in a few groves where spirits are plentiful, places where magic flows from the ground, and where the light of the full moon can touch their branches.",
+    "regions": [
+      "GIFT OF SHURITASHI"
+    ]
+  },
+  {
+    "name": "YELLOW SLIME",
+    "rarity": "uncommon",
+    "combat": 17,
+    "utility": 11,
+    "whimsy": 11,
+    "description": "Only those with iron constitutions or equipped with the right protective gear can withstand the nausea often brought on by the slime’s ripe, vinegary stench. Brewers have spent generations learning how to neutralize the unpleasant smell because yellow slime also possesses the ability to metabolize many venoms and poisons. The substance yellow slime is cultivated from larger, living omnivorous monsters of the same name.",
+    "regions": [
+      "LAND OF HOT WATER"
+    ]
+  },
+  {
+    "name": "BLOSSOM OF SPIRIT VINE",
+    "rarity": "rare",
+    "combat": 18,
+    "utility": 18,
+    "whimsy": 19,
+    "description": "There are three cryptic alchemical tomes on Obojima that speak of the arcane energies of spirit vine and its uses. Only the most expert potion makers understand how to work with this plant, and of those, only a few can fully release its power. Spirit vine only grows in the Spirit Realm, where it is abundant. However, what makes this plant unique is the blossom. At any given moment, there is only one blossom in existence. When it wilts or is harvested, another one will form on another vine in a random location.",
+    "regions": []
+  },
+  {
+    "name": "BOTTLED LIGHTNING",
+    "rarity": "rare",
+    "combat": 20,
+    "utility": 20,
+    "whimsy": 18,
+    "description": "Few wizards attempt such a feat and even fewer succeed at bottling lightning. The method, magic, and equipment used in achieving bottled lightning are all closely guarded secrets. For those wishing to get some of this crackling power, be warned that wizards charge a hefty fee for even the smallest bottle. Wizards who bottle lightning can be found, usually by hearing stories of their mountaintop towers or their mad wandering into lightning storms.",
+    "regions": []
+  },
+  {
+    "name": "BUBBLE GUM",
+    "rarity": "rare",
+    "combat": 18,
+    "utility": 19,
+    "whimsy": 20,
+    "description": "Though its flavors are many, all bubble gum is rare. It is most commonly found stuck to walls or floors in ruined buildings or stuck to the bottoms of shoes. Rarer still is bubble gum found un-chewed and still in its foil wrapper. The chew-it-but-don’t-swallow-it nature of bubble gum is confounding to many on the island, and academics on the island refer to the delightful substance as “masticant.”",
+    "regions": []
+  },
+  {
+    "name": "COAL FROM THE WANDERING LINE",
+    "rarity": "rare",
+    "combat": 19,
+    "utility": 19,
+    "whimsy": 20,
+    "description": "As the Wandering Line trundles across the island, the occasional bit of coal that feeds its boiler bounces out, landing by the side of the track. These fist-sized chunks resemble mundane coal in most respects, but they have bright blue iridescent flecks in them and they vibrate sporadically. As there are no longer coal mines on Obojima, the origin of this coal remains a mystery.",
+    "regions": []
+  },
+  {
+    "name": "CRIMSON OCTOPUS INK",
+    "rarity": "rare",
+    "combat": 19,
+    "utility": 18,
+    "whimsy": 19,
+    "description": "Artisans and scribes who use ink from the rare crimson octopus profess it makes the highest quality ink and dye on the island. But potion makers have found arcane uses for the ink as well, and sometimes there are heated arguments about who deserves to use the extremely rare and prized ink more. There are only three known crimson octopuses in the Shallows and the Lionfish King feverishly guards one of them. To make matters even more difficult for would-be poachers or ink harvesters, crimson octopuses are intelligent, wary masters of camouflage who rarely come out during the day.",
+    "regions": []
+  },
+  {
+    "name": "DRAGON FANG OF YUTRO",
+    "rarity": "rare",
+    "combat": 20,
+    "utility": 18,
+    "whimsy": 19,
+    "description": "In a bygone age, the dragon Yutro tormented Obojima from its lair on Mount Arbora. It threatened to eat every last living creature on the island unless each family sent one member as a sacrifice. Ineh, a young Nakudama metalsmith, was sent to represent her family. But she brought with her a hammer, for she had no intention of being eaten. A battle ensued. Aided by many spirits, Ineh smashed the fangs from Yutro’s maw, scattering them to the far corners of the island. Fangless, Yutro surrendered to Ineh and retreated into the mountain. To this day, however, Yutro’s fangs can be found in random places on Obojima, often embedded in the earth, in trees, or even in stone.",
+    "regions": []
+  },
+  {
+    "name": "FAIRY WILLOW",
+    "rarity": "rare",
+    "combat": 18,
+    "utility": 18,
+    "whimsy": 20,
+    "description": "The fairy willow grows in the Spirit Realm but it appears in the physical world when it is time to bloom their soft catkins in early spring. There is a botanical society on Obojima that tries to predict every year where the fairy willow will bloom, and they haven’t yet chosen the same place twice in a row.",
+    "regions": []
+  },
+  {
+    "name": "GIANT KOI FISH SCALE",
+    "rarity": "rare",
+    "combat": 18,
+    "utility": 20,
+    "whimsy": 18,
+    "description": "The giant flying koi lazily drift among the clouds where the sun reflects on their glistening scales. Every now and then, one of these scales flakes off and floats down to the ground, sometimes landing on a rooftop which is almost always seen as a good omen and cause for celebration. There are many temples and shrines that have giant koi scales as venerated objects, and some have scenes painted on them by master artisans.",
+    "regions": []
+  },
+  {
+    "name": "GOLDEN ROOT",
+    "rarity": "rare",
+    "combat": 18,
+    "utility": 18,
+    "whimsy": 18,
+    "description": "There are only a few ancient trees with roots that stretch into the deepest depths of the heart of Obojima. These roots absorb the harmonious energy of the natural world, which turns them into gold. Gathering them requires a respectful and cooperative relationship with the forest spirits that guard these ancient trees. Only then will they offer a golden root to a worthy potion maker.",
+    "regions": []
+  },
+  {
+    "name": "HAND OF ERYO",
+    "rarity": "rare",
+    "combat": 18,
+    "utility": 18,
+    "whimsy": 19,
+    "description": "These extremely rare mushrooms are the most desired of all the edible mushrooms on Obojima. They tend to grow in the uppermost branches, where they appear to be grasping at the sky. Forest spirits who locate one of these mushrooms will descend on it with ravenous frenzy, so foragers who hope to harvest some of their own might find stiff competition.",
+    "regions": []
+  },
+  {
+    "name": "IRIMBI CHRYSALIS",
+    "rarity": "rare",
+    "combat": 19,
+    "utility": 20,
+    "whimsy": 18,
+    "description": "Every ten years, deep in the forests of Obojima, the rare irimbi caterpillar climbs to the highest branches to make a jade-green chrysalis in which it transforms into an irimbi butterfly. The chrysalis feels like delicate rice paper to the touch, and finding one intact is almost impossible due to tree mites, which tend to make quick work of their favorite meal.",
+    "regions": []
+  },
+  {
+    "name": "LIONFISH POISON",
+    "rarity": "rare",
+    "combat": 20,
+    "utility": 0,
+    "whimsy": 0,
+    "description": "Only the Lionfish King or one of his royal line is capable of producing this potent poison, and to procure even a tiny bit of it is a treasure indeed. Many who have tried to steal such a prize have wound up shark food or washed up on shore—poisonedby the very substance they sought to steal.",
+    "regions": []
+  },
+  {
+    "name": "NOKUMAI’S FROZEN BREATH",
+    "rarity": "rare",
+    "combat": 0,
+    "utility": 0,
+    "whimsy": 20,
+    "description": "High up beyond the snowline is a stark realm where many magical beings reside. One of them is the legendary snow dragon, Nokumai, whose icy breath is desired by all who deal in things of an arcane nature. It’s rumored that Nokumai’s Frozen Breath never thaws, and the great dragon only breathes once every thousand years, although no one living has actually seen Nokumai and the dragon may be long gone.",
+    "regions": []
+  },
+  {
+    "name": "ORANGE SLIME",
+    "rarity": "rare",
+    "combat": 20,
+    "utility": 20,
+    "whimsy": 20,
+    "description": "Use with caution. Handle with care. You have been warned. Orange slime is highly combustible, even in small globules. It is also quite volatile. With the slightest agitation, the sticky, gelatinous substance can reduce stone and concrete to rubble. Most towns and villages prohibit orange slime, and its discovery is often met with panic. If orange slime is discovered, there’s usually a designated mage nearby who can be summoned to contain or dispose of it. The substance orange slime is cultivated from larger, living omnivorous monsters of the same name. It is exceedingly rare, as orange slime monsters appear only in a handful of caverns near the peak of Mount Arbora.",
+    "regions": []
+  },
+  {
+    "name": "OTA LANTERN OIL",
+    "rarity": "rare",
+    "combat": 0,
+    "utility": 20,
+    "whimsy": 0,
+    "description": "A lamp lit with Ota Lantern Oil can give one glimpses of the Spirit Realm. The oil is a special blend known only to members of the insular Ota Clan, but some of its ingredients are said to be sourced from the Spirit Realm itself. The Ota Clan sells only very small batches of their lantern oil at exorbitant prices from their village shop, but they have been known to trade for other rare and unique items.",
+    "regions": []
+  },
+  {
+    "name": "PLUMAGE OF A RUNNING KIRIO",
+    "rarity": "rare",
+    "combat": 18,
+    "utility": 18,
+    "whimsy": 19,
+    "description": "The Running Kirio is a rare bird of paradise with brilliant red plumage that appears only when an elder spirit is nearby. For the extremely lucky forager, the running kirio bird may shed a tail feather with all its vigorous sprinting and hopping when heralding the manifestation of an elder spirit, but many of those tail feathers are collected by the druids who, after a sighting of an elder spirit, are sure to scour the area for this most exotic of prizes.",
+    "regions": []
+  },
+  {
+    "name": "RONIN NEKO FIGURINE",
+    "rarity": "rare",
+    "combat": 0,
+    "utility": 19,
+    "whimsy": 18,
+    "description": "This artifact depicts a limited edition figurine of Ronin Neko, a heroic cat who fought against monsters and defended the innocent. Only a few of these figurines have ever been found, but there are a few Obojiman historians who have unearthed illustrated tomes depicting the story of Ronin Neko and his brave exploits.",
+    "regions": []
+  },
+  {
+    "name": "SAGE AROL’S BEETLE",
+    "rarity": "rare",
+    "combat": 18,
+    "utility": 20,
+    "whimsy": 0,
+    "description": "These beetles were made famous by the legendary sage, Arol, for his use of their mandibles as quills for his pen. But potion makers began to use the beetles for potion crafting when a witch from the Fish Head Coven began to see the rare bug in her dreams. Sage Arol’s Beetles live deep underground, fleeing even the dimmest light. On rare occasions, they come to the surface, though the reason remains a mystery.",
+    "regions": []
+  },
+  {
+    "name": "STARSTONE",
+    "rarity": "rare",
+    "combat": 18,
+    "utility": 0,
+    "whimsy": 19,
+    "description": "Starstone is a glittering crystalline rock that came from an ancient comet that broke up over Obojima long ago and scattered fragments across the island. Nakudama sages talk of this event in their sacred books, saying it was an auspicious omen, and ever since that time, the hunt for fragments of this Starstone has been undertaken.Starstone is very rare and is found lying on the ground or embedded in the earth. It is identified by its signature teardrop shape and magical shimmer.",
+    "regions": []
+  },
+  {
+    "name": "TEARS OF THE MOON",
+    "rarity": "rare",
+    "combat": 18,
+    "utility": 18,
+    "whimsy": 18,
+    "description": "On certain nights, a cloud in the Spirit Realm passes into the physical world and is struck by the moon’s rays which crystallizes it into a glittering mist known as moonbreath. On rare occasions, moonbreath may form into larger crystals known as tears of the moon, that fall to the earth to be discovered by a lucky traveler.",
+    "regions": []
+  },
+  {
+    "name": "WUFU WHISKY",
+    "rarity": "rare",
+    "combat": 19,
+    "utility": 19,
+    "whimsy": 19,
+    "description": "The location of the Wufu Distillery is a mystery, but the master distiller, Wufu, is well-known throughout Obojima where once every year he is seen buying the highest quality grains for his masterful Wufu whiskey. Master Wufu only sells a few bottles of his whiskey to the highest bidder or gives them as gifts to old friends. Some think he is a spirit or a wizard as all attempts to track him have failed. Wufu whiskey is kept in beautiful earthenware jars, sealed with the Wufu emblem. Those who have tasted the legendary whiskey are said to have tasted the spirit of kings.",
+    "regions": []
+  }
+]
