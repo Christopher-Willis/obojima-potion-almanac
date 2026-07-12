@@ -1,26 +1,32 @@
 # Obojima Potion Almanac
 
-Private GM tools for Obojima: Tales from the Tall Grass potion brewing.
+A static JavaScript GM tool for Obojima: Tales from the Tall Grass potion brewing.
 
-## Usage
+## Deploy
 
-Open the tool in a browser by serving the files locally:
+This is a pure static site, so it can be hosted on any static host (Vercel, GitHub Pages, Netlify, etc.).
+
+### Vercel
+
+Import the GitHub repo in Vercel and deploy. `vercel.json` already tells Vercel to serve the files directly with no build step.
+
+### GitHub Pages
+
+Enable GitHub Pages in the repo settings and point it to the `main` branch root.
+
+## Local development
+
+No Python needed. Use any static file server, for example:
 
 ```bash
-python -m http.server 8080
+npm run dev
+# or
+npx serve -l 8080 .
 ```
 
 Then visit `http://localhost:8080`.
 
-### Tool 1: Find Potion from Ingredients
-
-Select three or more ingredients from the rarity columns and click **Find Recipes** to see which potions can be brewed. Results are grouped by potion type (combat, utility, whimsy).
-
-### Tool 2: Find Recipes for a Potion
-
-Select any potion from the list to see every possible 3-ingredient combination that can create it. Recipes are sorted by overall rarity (common ingredients first).
-
-## Data
+## Data files
 
 - `ingredients.json` — ingredient stats, rarity, and regions.
 - `potions.json` — potion list with descriptions.
