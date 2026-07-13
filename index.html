@@ -12,6 +12,7 @@
     <nav>
       <button id="tab-ingredients" class="tab active" data-tab="ingredients">Find Potion from Ingredients</button>
       <button id="tab-potions" class="tab" data-tab="potions">Find Recipes for a Potion</button>
+      <button id="tab-coven" class="tab" data-tab="coven">Coven Almanac</button>
     </nav>
   </header>
 
@@ -66,6 +67,47 @@
         <div id="potion-recipes" class="results-panel">
           <h2>Recipes</h2>
           <p class="hint">Select a potion from the list to view its recipes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-coven" class="view">
+      <div class="tool-intro">
+        <h2>Coven Almanac</h2>
+        <p>Browse curated ingredient sets and recipes for each coven and mode.</p>
+      </div>
+
+      <div id="coven-loading" class="loading">Loading coven almanacs...</div>
+
+      <div class="coven-controls" id="coven-controls" style="display: none;">
+        <label>
+          <span>Coven</span>
+          <select id="coven-select"></select>
+        </label>
+        <label>
+          <span>Mode</span>
+          <select id="coven-mode-select"></select>
+        </label>
+      </div>
+
+      <div class="coven-dashboard" id="coven-dashboard" style="display: none;">
+        <div class="coven-stats" id="coven-stats"></div>
+
+        <div class="coven-panels">
+          <div class="coven-panel" id="coven-ingredients-panel">
+            <h3>Selected Ingredients</h3>
+            <div id="coven-ingredients"></div>
+          </div>
+
+          <div class="coven-panel coven-recipes-panel">
+            <h3>Recipes</h3>
+            <div id="coven-recipes"></div>
+          </div>
+        </div>
+
+        <div class="coven-panel coven-missing-panel">
+          <h3>Missing Potions</h3>
+          <div id="coven-missing"></div>
         </div>
       </div>
     </section>

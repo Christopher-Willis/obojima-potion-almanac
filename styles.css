@@ -318,4 +318,211 @@ footer {
   .rarity-columns {
     grid-template-columns: 1fr;
   }
+  .coven-panels {
+    grid-template-columns: 1fr;
+  }
+  .coven-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Coven Almanac */
+.coven-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.coven-controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+}
+
+.coven-controls select {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.coven-dashboard { display: block; }
+
+.coven-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.stat-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.stat-card .stat-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.stat-card .stat-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.coven-panels {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.coven-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.coven-panel h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.coven-rarity-group h4 {
+  margin: 0 0 0.5rem;
+  padding: 0.4rem;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.coven-rarity-group.common h4 { background: #dcfce7; color: #166534; }
+.coven-rarity-group.uncommon h4 { background: #fef3c7; color: #92400e; }
+.coven-rarity-group.rare h4 { background: #fee2e2; color: #991b1b; }
+
+.coven-ingredient-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.coven-ingredient-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem;
+  background: #fff;
+}
+
+.coven-ingredient-name {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.coven-ingredient-meta {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.coven-rarity-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.coven-rarity-dot.common { background: var(--common); }
+.coven-rarity-dot.uncommon { background: var(--uncommon); }
+.coven-rarity-dot.rare { background: var(--rare); }
+
+.region-badge {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.region-badge.in-region { background: #dcfce7; color: #166534; }
+.region-badge.out-region { background: #fee2e2; color: #991b1b; }
+
+.coven-recipes-panel .type-section h4 {
+  margin: 0 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: #e2e8f0;
+  text-transform: capitalize;
+}
+
+.coven-recipes-panel .type-section.combat h4 { background: #fee2e2; color: #991b1b; }
+.coven-recipes-panel .type-section.utility h4 { background: #dbeafe; color: #1e40af; }
+.coven-recipes-panel .type-section.whimsy h4 { background: #f3e8ff; color: #6b21a8; }
+
+.coven-recipe-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+}
+
+.coven-recipe-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
+}
+
+.coven-recipe-tags {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.coven-missing-panel .type-section h4 {
+  margin: 0 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: #e2e8f0;
+  text-transform: capitalize;
+}
+
+.coven-missing-panel .type-section.combat h4 { background: #fee2e2; color: #991b1b; }
+.coven-missing-panel .type-section.utility h4 { background: #dbeafe; color: #1e40af; }
+.coven-missing-panel .type-section.whimsy h4 { background: #f3e8ff; color: #6b21a8; }
+
+.coven-missing-card {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: #fff;
+}
+
+.coven-missing-card .description {
+  font-size: 0.8rem;
+  color: var(--text);
+  margin-top: 0.25rem;
 }

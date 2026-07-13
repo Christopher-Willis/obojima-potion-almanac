@@ -4,6 +4,8 @@ let potions = [];
 let potionByName = {};
 let potionFormulas = null;
 let selectedIngredients = new Set();
+let covenAlmanacs = [];
+let covenAlmanacsByKey = {};
 
 const rarityOrder = { common: 0, uncommon: 1, rare: 2 };
 const typeOrder = { combat: 0, utility: 1, whimsy: 2 };
@@ -277,10 +279,187 @@ async function init() {
       console.error(err);
       document.getElementById('potion-loading').textContent = 'Error loading potion recipes.';
     });
+
+    loadJSON('coven_almanacs.json').then(data => {
+      covenAlmanacs = data;
+      covenAlmanacs.forEach(entry => {
+        covenAlmanacsByKey[`${entry.coven}|${entry.mode}`] = entry;
+      });
+      initCovenAlmanac();
+    }).catch(err => {
+      console.error(err);
+      document.getElementById('coven-loading').textContent = 'Error loading coven almanacs.';
+    });
   } catch (err) {
     console.error(err);
     document.body.innerHTML = `<p class="loading">Failed to load data: ${err.message}</p>`;
   }
+}
+
+function getCovens() {
+  const seen = new Set();
+  return covenAlmanacs.map(e => e.coven).filter(c => {
+    if (seen.has(c)) return false;
+    seen.add(c);
+    return true;
+  });
+}
+
+function getModesForCoven(coven) {
+  const modes = [];
+  const order = ['strict', 'predominant', 'complete', 'economical'];
+  const entryModes = new Set(covenAlmanacs.filter(e => e.coven === coven).map(e => e.mode));
+  order.forEach(m => { if (entryModes.has(m)) modes.push(m); });
+  return modes;
+}
+
+function getCovenEntry(coven, mode) {
+  return covenAlmanacsByKey[`${coven}|${mode}`] || null;
+}
+
+function initCovenAlmanac() {
+  const covenSelect = document.getElementById('coven-select');
+  const modeSelect = document.getElementById('coven-mode-select');
+  const covens = getCovens();
+  if (covens.length === 0) return;
+
+  covenSelect.innerHTML = covens.map(c => `<option value="${c}">${c}</option>`).join('');
+
+  function updateModes() {
+    const modes = getModesForCoven(covenSelect.value);
+    const current = modeSelect.value;
+    modeSelect.innerHTML = modes.map(m => `<option value="${m}">${m}</option>`).join('');
+    if (modes.includes(current)) modeSelect.value = current;
+    renderCovenAlmanac();
+  }
+
+  covenSelect.addEventListener('change', updateModes);
+  modeSelect.addEventListener('change', renderCovenAlmanac);
+
+  document.getElementById('coven-loading').style.display = 'none';
+  document.getElementById('coven-controls').style.display = 'flex';
+  document.getElementById('coven-dashboard').style.display = 'block';
+
+  updateModes();
+}
+
+function renderCovenAlmanac() {
+  const coven = document.getElementById('coven-select').value;
+  const mode = document.getElementById('coven-mode-select').value;
+  const entry = getCovenEntry(coven, mode);
+  if (!entry) return;
+
+  renderCovenStats(entry.stats);
+  renderCovenIngredients(entry.selected_ingredients);
+  renderCovenRecipes(entry.recipes);
+  renderCovenMissing(entry.missing_potions);
+}
+
+function renderCovenStats(stats) {
+  const el = document.getElementById('coven-stats');
+  el.innerHTML = `
+    <div class="stat-card"><span class="stat-value">${stats.selected_count}</span><span class="stat-label">Ingredients</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.in_region_count}</span><span class="stat-label">In-Region</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.out_region_count}</span><span class="stat-label">Out-Region</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.region_percent}%</span><span class="stat-label">Region %</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.common}</span><span class="stat-label">Common</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.uncommon}</span><span class="stat-label">Uncommon</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.rare}</span><span class="stat-label">Rare</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.total_cost}</span><span class="stat-label">Total Cost</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.cost_per_potion}</span><span class="stat-label">Cost / Potion</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.covered}</span><span class="stat-label">Covered</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.uncoverable}</span><span class="stat-label">Uncoverable</span></div>
+    <div class="stat-card"><span class="stat-value">${stats.unreachable}</span><span class="stat-label">Unreachable</span></div>
+  `;
+}
+
+function renderCovenIngredients(selectedIngredients) {
+  const el = document.getElementById('coven-ingredients');
+  const byRarity = { common: [], uncommon: [], rare: [] };
+  selectedIngredients.forEach(ing => {
+    byRarity[ing.rarity].push(ing);
+  });
+
+  let html = '';
+  ['common', 'uncommon', 'rare'].forEach(rarity => {
+    const list = byRarity[rarity].sort((a, b) => a.name.localeCompare(b.name));
+    if (list.length === 0) return;
+    html += `<div class="coven-rarity-group ${rarity}"><h4>${rarity}</h4><div class="coven-ingredient-list">`;
+    list.forEach(ing => {
+      const regionBadge = ing.in_coven_region ? '<span class="region-badge in-region">in-region</span>' : '<span class="region-badge out-region">out-of-region</span>';
+      const regions = ing.regions ? ing.regions.join(', ') : 'Any';
+      html += `<div class="coven-ingredient-card">
+        <div class="coven-ingredient-name">
+          <span class="coven-rarity-dot ${ing.rarity}"></span>
+          ${ing.name}
+          ${regionBadge}
+        </div>
+        <div class="coven-ingredient-meta">[${valuesString(ing)}] &mdash; ${regions}</div>
+      </div>`;
+    });
+    html += `</div></div>`;
+  });
+  el.innerHTML = html || '<p class="hint">No ingredients selected.</p>';
+}
+
+function renderCovenRecipes(recipes) {
+  const el = document.getElementById('coven-recipes');
+  const byType = { combat: [], utility: [], whimsy: [] };
+  recipes.forEach(r => {
+    const type = r.type || 'unknown';
+    if (byType[type]) byType[type].push(r);
+  });
+
+  let html = '';
+  ['combat', 'utility', 'whimsy'].forEach(type => {
+    const list = byType[type].sort((a, b) => a.number - b.number);
+    if (list.length === 0) return;
+    html += `<div class="type-section ${type}"><h4>${type}</h4>`;
+    list.forEach(r => {
+      html += `<div class="coven-recipe-card">
+        <div class="coven-recipe-title">
+          <strong>${r.potion}</strong>
+          <span class="number">#${r.number}</span>
+          <span class="coven-recipe-tags">${r.region_count} region${r.region_count === 1 ? '' : 's'}${r.is_strict ? ' &bull; strict' : ''}</span>
+        </div>
+        <div class="description">${r.description || ''}</div>
+        <div class="combination">`;
+      r.ingredients.forEach(i => {
+        html += `<span class="ingredient-chip ${i.rarity}">${i.name}</span>`;
+      });
+      html += `</div></div>`;
+    });
+    html += `</div>`;
+  });
+  el.innerHTML = html || '<p class="hint">No recipes available.</p>';
+}
+
+function renderCovenMissing(missing) {
+  const el = document.getElementById('coven-missing');
+  if (!missing || missing.length === 0) {
+    el.innerHTML = '<p class="hint">All 180 potions are covered.</p>';
+    return;
+  }
+  const byType = { combat: [], utility: [], whimsy: [] };
+  missing.forEach(p => {
+    const type = p.type || 'unknown';
+    if (byType[type]) byType[type].push(p);
+  });
+
+  let html = '';
+  ['combat', 'utility', 'whimsy'].forEach(type => {
+    const list = byType[type].sort((a, b) => a.number - b.number);
+    if (list.length === 0) return;
+    html += `<div class="type-section ${type}"><h4>${type}</h4>`;
+    list.forEach(p => {
+      html += `<div class="coven-missing-card">
+        <strong>${p.potion}</strong> <span class="number">#${p.number}</span>
+        <div class="description">${p.description || ''}</div>
+      </div>`;
+    });
+    html += `</div>`;
+  });
+  el.innerHTML = html;
 }
 
 init();
