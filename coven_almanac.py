@@ -39,6 +39,13 @@ COVENS = [
 RARITY_ORDER = {"common": 0, "uncommon": 1, "rare": 2}
 TYPE_ORDER = {"combat": 0, "utility": 1, "whimsy": 2}
 
+# Cost scale from the "Ingredients for Sale or Trade" chart.
+COST_COMMON_IN_REGION = 3.0
+COST_COMMON_OUT_REGION = 7.0
+COST_UNCOMMON_IN_REGION = 8.0
+COST_UNCOMMON_OUT_REGION = 23.0
+COST_RARE = 100.0
+
 
 def load_data(repo_dir="/home/ubuntu/repos/obojima-potion-almanac"):
     with open(f"{repo_dir}/ingredients.json") as f:
@@ -81,9 +88,12 @@ def region_count(ingredients, coven_mask, ingredient_info):
     )
 
 
-def set_cover(relevant_formulas, candidates, ingredient_info, region_mask=0, prefer_region=True):
+def set_cover(relevant_formulas, candidates, ingredient_info, region_mask=0, prefer_region=True, cost_per_candidate=None):
     """Greedy set cover for a hypergraph where a potion is covered when one of its
     relevant formulas is fully contained in the selected ingredient set.
+
+    If cost_per_candidate is provided, picks the ingredient with the best
+    (new potions / cost) ratio instead of the most new potions.
     """
     candidates = set(candidates)
     formula_by_candidate = {c: [] for c in candidates}
@@ -94,20 +104,30 @@ def set_cover(relevant_formulas, candidates, ingredient_info, region_mask=0, pre
     # Precomputed static tie-breakers
     static_key = {}
     for c in candidates:
-        if prefer_region:
-            in_region = bool(ingredient_info[c]["region_mask"] & region_mask)
+        in_region = bool(ingredient_info[c]["region_mask"] & region_mask)
+        if cost_per_candidate is not None:
+            cost = cost_per_candidate[c]
             static_key[c] = (
+                cost,
                 -int(in_region),
-                -len(formula_by_candidate[c]),
                 ingredient_info[c]["rarity_score"],
+                -len(formula_by_candidate[c]),
                 c,
             )
         else:
-            static_key[c] = (
-                -len(formula_by_candidate[c]),
-                ingredient_info[c]["rarity_score"],
-                c,
-            )
+            if prefer_region:
+                static_key[c] = (
+                    -int(in_region),
+                    -len(formula_by_candidate[c]),
+                    ingredient_info[c]["rarity_score"],
+                    c,
+                )
+            else:
+                static_key[c] = (
+                    -len(formula_by_candidate[c]),
+                    ingredient_info[c]["rarity_score"],
+                    c,
+                )
 
     count = [0] * len(relevant_formulas)
     covered = set()
@@ -127,6 +147,9 @@ def set_cover(relevant_formulas, candidates, ingredient_info, region_mask=0, pre
                 gain += 1
             elif count[fidx] == 1:
                 secondary += 1
+        if cost_per_candidate is not None:
+            cost = cost_per_candidate[c]
+            return (-gain / cost, -secondary / cost) + static_key[c]
         return (-gain, -secondary) + static_key[c]
 
     while selected_set != candidates and len(covered) < len(universe):
@@ -169,7 +192,7 @@ def build_almanac(coven, regions, mode, ingredient_info, all_formulas, potions_i
     coven_mask = sum(REGION_BIT[r] for r in regions)
     relevant = []
     candidates = set()
-    if mode == "complete":
+    if mode in ("complete", "economical"):
         for f in all_formulas:
             fcopy = dict(f)
             fcopy["region_count"] = region_count(f["ingredients"], coven_mask, ingredient_info)
@@ -186,6 +209,22 @@ def build_almanac(coven, regions, mode, ingredient_info, all_formulas, potions_i
 
     universe = {f["potion"] for f in relevant}
     all_potion_set = set(potions_info.keys())
+
+    # Cost per ingredient for this coven, based on rarity and region.
+    cost_per_candidate = {}
+    for c in candidates:
+        info = ingredient_info[c]
+        in_region = bool(info["region_mask"] & coven_mask)
+        rarity = info.get("rarity", "").lower()
+        if rarity == "common":
+            cost = COST_COMMON_IN_REGION if in_region else COST_COMMON_OUT_REGION
+        elif rarity == "uncommon":
+            cost = COST_UNCOMMON_IN_REGION if in_region else COST_UNCOMMON_OUT_REGION
+        elif rarity == "rare":
+            cost = COST_RARE
+        else:
+            cost = COST_RARE
+        cost_per_candidate[c] = cost
 
     if not relevant:
         return {
@@ -213,6 +252,7 @@ def build_almanac(coven, regions, mode, ingredient_info, all_formulas, potions_i
         ingredient_info,
         region_mask=coven_mask if mode != "complete" else COMPLETE_REGION_MASK,
         prefer_region=True,
+        cost_per_candidate=cost_per_candidate if mode == "economical" else None,
     )
     recipe_map = choose_recipes(selected, relevant, ingredient_info, coven_mask)
     covered = set(recipe_map.keys())
@@ -285,6 +325,9 @@ def build_almanac(coven, regions, mode, ingredient_info, all_formulas, potions_i
     for d in selected_data:
         rarity_counts[d.get("rarity", "unknown").lower()] += 1
 
+    total_cost = sum(cost_per_candidate[ing] for ing in selected)
+    cost_per_potion = round(total_cost / len(covered), 2) if covered else 0
+
     stats = {
         "total_potions": len(all_potion_set),
         "max_coverable": len(universe),
@@ -298,6 +341,8 @@ def build_almanac(coven, regions, mode, ingredient_info, all_formulas, potions_i
         "common": rarity_counts.get("common", 0),
         "uncommon": rarity_counts.get("uncommon", 0),
         "rare": rarity_counts.get("rare", 0),
+        "total_cost": round(total_cost, 2),
+        "cost_per_potion": cost_per_potion,
     }
 
     return {
@@ -317,7 +362,7 @@ def main():
 
     almanacs = []
     for coven, regions in COVENS:
-        for mode in ("strict", "predominant", "complete"):
+        for mode in ("strict", "predominant", "complete", "economical"):
             print(f"Building {coven} ({mode})...")
             almanacs.append(build_almanac(coven, regions, mode, ingredient_info, all_formulas, potions_info))
 
@@ -326,9 +371,9 @@ def main():
 
     with open("/home/ubuntu/coven_almanacs_summary.md", "w") as f:
         f.write("# Coven Almanac Summary\n\n")
-        f.write("**Definitions:** `Covered` = potions we can make with the selected ingredients; `Max Coverable` = potions that have any possible recipe under the mode; `Uncoverable` = potions with no such recipe; `Unreachable` = possible recipes we did not end up selecting.\n\n")
-        f.write("| Coven | Region(s) | Mode | Selected | In-Region | Out-Region | Region % | Common | Uncommon | Rare | Covered | Max Coverable | Uncoverable | Unreachable |\n")
-        f.write("|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n")
+        f.write("**Definitions:** `Covered` = potions we can make with the selected ingredients; `Max Coverable` = potions that have any possible recipe under the mode; `Uncoverable` = potions with no such recipe; `Unreachable` = possible recipes we did not end up selecting. `Cost` = total cost using the chart's scale.\n\n")
+        f.write("| Coven | Region(s) | Mode | Selected | In-Region | Out-Region | Region % | Common | Uncommon | Rare | Cost | Cost / Potion | Covered | Max Coverable | Uncoverable | Unreachable |\n")
+        f.write("|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n")
         for a in almanacs:
             s = a["stats"]
             f.write(
@@ -338,6 +383,7 @@ def main():
                 f"{s['out_region_count']} | "
                 f"{s['region_percent']}% | "
                 f"{s['common']} | {s['uncommon']} | {s['rare']} | "
+                f"{s['total_cost']} | {s['cost_per_potion']} | "
                 f"{s['covered']} | {s['max_coverable']} | "
                 f"{s['uncoverable']} | {s['unreachable']} |\n"
             )
